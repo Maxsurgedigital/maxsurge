@@ -4228,3 +4228,8 @@ html.is-animating .mil-menu-frame {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+
+.services-flex{
+  display: flex;
+  justify-content: center;
+}

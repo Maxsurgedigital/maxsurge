@@ -3150,8 +3150,8 @@ portfolio
 .mil-portfolio-item .mil-cover-frame .mil-cover img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   -o-object-position: center;
      object-position: center;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -4086,8 +4086,8 @@ images
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* -o-object-fit: cover;
+     object-fit: cover; */
   -o-object-position: center;
      object-position: center;
 }
@@ -4098,7 +4098,7 @@ images
   padding-bottom: 140%;
 }
 .mil-image-frame.mil-square {
-  padding-bottom: 100%;
+  padding-bottom: 50%;
 }
 .mil-image-frame.mil-fw {
   padding-bottom: 50%;

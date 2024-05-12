@@ -1115,6 +1115,12 @@ preloader
   height: 100%;
   background-color:rgb(93, 63, 211);
 }
+@media only screen and (max-width: 600px) {
+  .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-reveal-frame .mil-h3 > img{
+    margin-left: -100px;
+    width: 150%;
+  }
+}
 .mil-preloader.mil-hidden {
   pointer-events: none;
 }
@@ -2399,6 +2405,21 @@ services
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
+.mil-service-card-sm .service-gif {
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mil-service-card-sm .service-gif > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.mil-service-card-sm:hover .service-gif{
+  display: block;
+  transition: ease-in;
+}
 .mil-service-card-sm .mil-button {
   -webkit-transform: scale(0.3);
           transform: scale(0.3);
@@ -2444,6 +2465,11 @@ services
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
     opacity: 1;
+  }
+  .mil-service-card-sm .service-gif {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 

@@ -61,7 +61,7 @@ $(function () {
         }, {
             y: "0px",
             opacity: 1,
-            stagger: 0.4
+            stagger: 0.38
         },
     );
 
@@ -84,7 +84,7 @@ $(function () {
     timeline.to(".mil-reveal-box", {
         right: "0"
     });
-    timeline.to(".mil-reveal-box", 0.3, {
+    timeline.to(".mil-reveal-box", 0.1, {
         width: "0%"
     });
     timeline.fromTo(".mil-animation-2 .mil-h3", {
@@ -92,7 +92,7 @@ $(function () {
     }, {
         opacity: 1,
     }, "-=.5");
-    timeline.to(".mil-animation-2 .mil-h3", 0.6, {
+    timeline.to(".mil-animation-2 .mil-h3", 2.5, {
         opacity: 0,
         y: '-30'
     }, "+=.5");

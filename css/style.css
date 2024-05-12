@@ -1110,10 +1110,10 @@ preloader
 }
 .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-reveal-frame .mil-reveal-box {
   z-index: 4;
-  position: absolute;
+  /* position: absolute;
   opacity: 0;
   height: 100%;
-  background-color:rgb(93, 63, 211);
+  background-color:rgb(93, 63, 211); */
 }
 @media only screen and (max-width: 600px) {
   .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-reveal-frame .mil-h3 > img{

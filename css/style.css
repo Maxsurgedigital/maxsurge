@@ -1120,6 +1120,9 @@ preloader
     margin-left: -100px;
     width: 150%;
   }
+  .mil-preloader {
+    z-index: 1000 !important;
+  }
 }
 .mil-preloader.mil-hidden {
   pointer-events: none;

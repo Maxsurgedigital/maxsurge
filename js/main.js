@@ -92,7 +92,7 @@ $(function () {
     }, {
         opacity: 1,
     }, "-=.5");
-    timeline.to(".mil-animation-2 .mil-h3", 2.5, {
+    timeline.to(".mil-animation-2 .mil-h3", 2, {
         opacity: 0,
         y: '-30'
     }, "+=.5");

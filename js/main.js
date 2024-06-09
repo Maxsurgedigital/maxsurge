@@ -149,30 +149,32 @@ $(function () {
     accordion
 
     ***************************/
-
     let groups = gsap.utils.toArray(".mil-accordion-group");
     let menus = gsap.utils.toArray(".mil-accordion-menu");
     let menuToggles = groups.map(createAnimation);
-
+    
     menus.forEach((menu) => {
         menu.addEventListener("click", () => toggleMenu(menu));
     });
-
+    
+    // Toggle the first menu to be open initially
+    toggleMenu(menus[0]);
+    
     function toggleMenu(clickedMenu) {
         menuToggles.forEach((toggleFn) => toggleFn(clickedMenu));
     }
-
+    
     function createAnimation(element) {
         let menu = element.querySelector(".mil-accordion-menu");
         let box = element.querySelector(".mil-accordion-content");
         let symbol = element.querySelector(".mil-symbol");
         let minusElement = element.querySelector(".mil-minus");
         let plusElement = element.querySelector(".mil-plus");
-
+    
         gsap.set(box, {
             height: "auto",
         });
-
+    
         let animation = gsap
             .timeline()
             .from(box, {
@@ -195,7 +197,7 @@ $(function () {
                 ease: "none",
             }, 0)
             .reverse();
-
+    
         return function (clickedMenu) {
             if (clickedMenu === menu) {
                 animation.reversed(!animation.reversed());
@@ -204,6 +206,7 @@ $(function () {
             }
         };
     }
+    
     /***************************
 
     back to top
